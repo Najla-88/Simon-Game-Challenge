@@ -14,6 +14,13 @@ $(document).keypress(function() {
     }
 })
 
+$(document).on('click', function() {
+    if (!started) {
+        nextSequence();
+        started = true;
+    }
+})
+
 // an event listener for any press on the buttons
 $('.btn').on('click', function() {
 
